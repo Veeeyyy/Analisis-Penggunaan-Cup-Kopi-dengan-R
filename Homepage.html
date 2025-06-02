@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Analysis</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('bg.jpeg') no-repeat center center/cover;
+            height: 90vh;
+            width: 160h;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            background-size: cover;
+        }
+        .navbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: rgba(50, 25, 0, 0.8);
+        }
+        .navbar a {
+            color: #AB9878;
+            text-decoration: none;
+            margin: 0 35px;
+            letter-spacing: 2px;
+        }
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            transform: translateX(40px);
+            color: #AB9878;
+            letter-spacing: 3px;
+        }
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .button {
+            background: rgba(50, 24, 0, 0.8);
+            padding: 30px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: -600px;
+            border-radius: 50px 0px 50px 0px; 
+            width: 150px;  /* Lebar tombol */
+            height: 50px;  /* Tinggi tombol */
+            text-align: center;
+            line-height: 50px;
+            letter-spacing: 3px;
+            color: #f4ead8;
+            position: relative;
+            bottom: 900px;
+            top: -220px;  
+            left: 90px;
+            right: 50px;
+        }
+        .button:hover {
+            background: rgba(50, 25, 0, 1);
+            
+        }
+        
+        .greet {
+            letter-spacing: 3px;
+            color: #e7c992;
+            margin-left: 0px;
+            margin-right: 600px;
+            margin-bottom: 0px;
+            margin-top: 350px;
+            text-align: left;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">R ANALYSIS ON COFFEE CUP USAGE</div>
+        <div>
+            <!--<a href="#" class="page2" onclick="openInNewTab()">What’s Your Survey For</a>-->
+            <a href="#" class="page3" onclick="openInNewTabb()">Contact Us</a>
+        </div>
+    </div>
+    <div class="greet">
+        <h1>Hello, Dear Participant</h1>
+        <p>We're glad to see u here</p> 
+        <p>please click the survey button to do the survey</p>
+        <p>Your survey will be used to analize the usage of</p>
+        <p>plastic cups for coffee</p>
+        <P>It'll help us to find the right solution</P>
+    </div>
+    <div class="container">
+        <div class="button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeIQse0ft0SIJCaT2Dbgq_i2-jZtY7EzVLM7BB87IXoF-3reg/viewform?embedded=true'">Survey</div>
+        <a class="button" onclick="openInNewTab()">Analysis</a>
+    </div>
+
+
+    <!--
+    <div class="container2"></div>
+        <div>
+            <a href="#" class="page2" onclick="openInNewTab()">What’s Your Survey For</a>
+            <a href="#" class="page3" onclick="openInNewTab2()">Contact Us</a>
+        </div>  
+    </div>
+    -->
+
+
+    <script>
+        function openInNewTab() {
+            window.open("c.html", "_blank");
+        }
+        
+        function openInNewTabb() {
+            window.open("b.html", "_blank");
+        }
+        /*
+        function openInNewTab2() {
+            window.open("sgtberhasil.R", "_blank");
+        }
+            */
+    </script>
+
+</body>
+</html>
